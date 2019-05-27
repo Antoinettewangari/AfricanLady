@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.africanlady.MainActivity"
+    android:background="@color/grey">
+
+    <RelativeLayout
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:clipToPadding="true"
+        android:background="@color/grey"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="50dp"
+        android:elevation="4dp"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/hair"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:src="@drawable/hair"
+            />
+
+            <ImageView
+                android:id="@+id/hair1"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:src="@drawable/hair1"
+                android:layout_marginLeft="20dp"/>
+
+            <ImageView
+                android:id="@+id/hair2"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:src="@drawable/hair2"
+                android:layout_marginLeft="20dp"/>
+
+            <ImageView
+                android:id="@+id/hair3"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:src="@drawable/hair3"
+                android:layout_marginLeft="55dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_below="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/hair4"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/hair4"/>
+            <ImageView
+                android:id="@+id/hair5"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/hair5"
+                android:layout_marginLeft="20dp"/>
+            <ImageView
+                android:id="@+id/hair6"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/hair6"
+                android:layout_marginLeft="20dp"/>
+
+            <ImageView
+                android:id="@+id/hair7"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/hair7"
+                android:layout_marginLeft="55dp"/>
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="496dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="300dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="300dp"
+                android:src="@drawable/dog"
+                android:layout_marginTop="50dp"
+                />
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="HAIR"
+                android:layout_below="@+id/image"
+                android:layout_margin="50dp"/>
+
+            <ImageView
+
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:id="@+id/btnCamera"
+                android:layout_alignParentLeft="true"
+
+                android:src="@drawable/camera"
+                />
+            <ImageView
+                android:id="@+id/btnGallery"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignRight="@+id/image"
+                android:src="@drawable/gallery2"/>
+
+            <ImageView
+                android:id="@+id/share"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:src="@drawable/share1"
+                android:layout_toLeftOf="@+id/button"
+                android:layout_below="@+id/image"
+                android:layout_marginTop="50dp"
+                android:layout_alignParentLeft="true"
+
+                />
+
+            <ImageView
+                android:id="@+id/save"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:src="@drawable/save"
+                android:layout_toRightOf="@+id/button"
+                android:layout_below="@+id/image"
+                android:layout_marginTop="50dp"
+                android:layout_alignParentRight="true"/>
+
+
+
+
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>
